@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @document.name %>
+</p>
+
+<p>
+  <strong>Users:</strong>
+  <%= @document.users_id_id %>
+</p>
+<p>
+  <strong>ID:</strong>
+  <%= @document.id %>
+</p>
+<p>
+  <strong>Catelories:</strong>
+  <% @catelories = Catelory.find(@document.catelories_id_id)%>
+  <%= @catelories.name%>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

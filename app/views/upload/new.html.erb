@@ -1,0 +1,19 @@
+<%provide :title, "Upload"%>
+<h1>Upload</h1>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+
+<%= form_for :session, url: upload_path do |f|%>
+ 
+
+    <%= f.label :Catelogy%>
+    <%= f.text_field :Catelogy%>
+
+    <%= f.label :Link%>
+    <%= f.text_field :Link%>
+
+   
+    <%= f.submit "Upload", class: "btn btn-primary"%>
+<%end%>
+</div>
+</div>

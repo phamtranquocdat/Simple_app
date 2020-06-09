@@ -1,0 +1,2 @@
+class Catelory < ApplicationRecord
+end
